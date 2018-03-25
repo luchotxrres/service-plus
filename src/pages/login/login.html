@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title align="center">Inicio de Sesión</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="page-login" fxFlexFill>
+  <div align="center">
+    <img src="assets/imgs/imgBanner.png" width="100%"/>    
+  </div>
+    <ion-item class="pass-mail">
+    <ion-label floating>Direccion de Correo Electronico</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input> 
+  </ion-item>
+
+  <ion-item class="pass-mail">
+    <ion-label floating>Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input> 
+  </ion-item>
+
+<div align="center" style="margin-top:10%; margin-bottom:10%;">
+  <button ion-button (click)='login(user)' class="botones-login">Iniciar Sesion</button>
+  <button ion-button color="light" (click)='register()' class="botones-login" >Registrarse</button>
+</div>
+<div align="center" class="forgot-password" (click)="pass()" >
+  <h3>¿Olvidaste tu Contraseña?</h3>
+</div>
+</ion-content>

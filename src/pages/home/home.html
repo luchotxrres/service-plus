@@ -1,0 +1,47 @@
+<ion-header>
+  
+  <ion-navbar color="primary">
+
+  <ion-buttons left >
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-buttons>
+ 
+
+    <ion-title>
+      <ion-buttons center>
+        <img src="assets/imgs/logo2.png" width="15%" />
+      </ion-buttons>
+    </ion-title>
+
+    <ion-buttons right>
+      <img src="assets/imgs/profilePhoto.jpg" width="10%" style="border-radius:15px" />
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+  <ion-content parallax class="page-home" fxFlexFill>
+    
+    <div class="bg">
+      <img src="assets/imgs/ionicLogo.png" />
+    </div>
+    <div align="center">
+      <h1>
+          Un framework simple, ágil y divertido
+      </h1>
+    </div>
+    <div class="btns">
+      <button ion-button full ion-icon name="video" (click)="startVideo()">Start Video</button>
+
+      <button ion-button full (click)="startAudio()">Start Audio</button>
+      
+      <button ion-button full (click)="stopAudio()" color="danger">Stop Audio</button>
+    </div>
+    <h2 align="center" style="margin-top:10%;">
+      <a href="https://ionicframework.com">Explore the Docs</a>
+    </h2>
+  </ion-content>

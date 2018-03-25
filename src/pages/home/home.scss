@@ -1,0 +1,25 @@
+page-home {
+    .page-home{
+        background-color: #f3f4f3 ;
+        
+        .bg{
+            margin-top: 10%;
+            height: 20%;
+            background-size: cover;
+            filter: blur(5px);
+            background-position: center center;
+            
+        }
+        h1{
+            margin-top: -10%;
+            position: relative;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            letter-spacing: 5px;
+
+        }
+        .btns{
+            margin-top: 15%;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+
+<ion-header> 
+  <ion-navbar color='primary'>
+    <ion-title>Tu Perfil</ion-title>
+  </ion-navbar>
+</ion-header>
+    
+    <ion-content parallax class="profile-page" fxFlexFill>
+      
+      <div class="bg">
+        <img src="assets/imgs/programacion.jpg" />        
+      </div>
+      
+      <div class="main-cnt" fxFlexFill>
+
+      
+
+        <div align="center" class="ing-datos"  (click)="getPicture()" >
+            <ion-label>
+              <img class="foto-perfil" src="assets/imgs/profilePhoto.jpg" width="25%" />
+              <p>Elige tu Foto de Perfil</p>
+            </ion-label>
+        </div>
+
+
+      <div align="center">
+          <h1>Ingresa tus Datos</h1>
+      </div> 
+
+      <div fxFlexFill>
+        <ion-item class="datos" >
+          <ion-label floating>Nombre</ion-label>
+          <ion-input  [(ngModel)]="profile.firstName" ></ion-input>
+        </ion-item>
+    
+        <ion-item class="datos">
+          <ion-label floating>Apellido</ion-label>
+          <ion-input [(ngModel)]="profile.lastName" ></ion-input>
+        </ion-item>
+
+        <ion-item class="datos">
+          <ion-label floating>Username</ion-label>
+          <ion-input [(ngModel)]="profile.username" ></ion-input>
+        </ion-item>     
+      </div>
+      <div style="margin-top:10%;">
+        <button ion-button clear block (click)="createPerfil()">Crear Perfil</button>
+      </div>
+    </div>
+
+    </ion-content>
+    

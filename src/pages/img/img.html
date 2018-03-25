@@ -1,0 +1,38 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+      <ion-buttons left>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title centers>Imagenes</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="img-page" fxFlexFill>
+  <div align="center" style="margin-bottom:10%">
+    <img src="assets/imgs/logo2.png" width="30%" />
+  </div>
+  <br>
+ <div>
+  <h2 align="center" bold>Guarde sus Fotos de una manera muy original</h2>
+ </div>
+
+  <div align="center center" class="pins" fxFlexFill>
+    <div class="pin" *ngFor="let photo of photos">
+      <img [src]="photo" *ngIf="photo" />
+    </div>
+  </div>
+
+  <div>
+    <ion-fab bottom right>
+    <button ion-fab (click)="actionSheet()" >
+      <ion-icon name="camera"></ion-icon>
+    </button>
+  </ion-fab>
+  </div>
+
+</ion-content>
